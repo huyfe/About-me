@@ -1,0 +1,118 @@
+.moveInLeft {
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.moveUp {
+    animation-name: up;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.moveInRight {
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.moveZoom {
+    animation-name: moveZoom;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.moveTopBotLeft {
+    animation-name: moveTopBotLeft;
+    animation-duration: 2s;
+}
+
+.moveTopBotRight {
+    animation-name: moveTopBotRight;
+    animation-duration: 2s;
+}
+
+.moveBotTopLeft {
+    animation-name: moveBotTopLeft;
+    animation-duration: 2s;
+}
+
+.moveBotTopRight {
+    animation-name: moveBotTopRight;
+    animation-duration: 2s;
+}
+
+@keyframes moveTopBotLeft {
+    from {
+        transform: translate(-100px, -100px);
+    }
+    top {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveTopBotRight {
+    from {
+        transform: translate(100px, -100px);
+    }
+    top {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveBotTopLeft {
+    from {
+        transform: translate(-100px, 100px);
+    }
+    top {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveBotTopRight {
+    from {
+        transform: translate(100px, 100px);
+    }
+    top {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes up {
+    from {
+        transform: translateY(150px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveInLeft {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInRight {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveZoom {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
