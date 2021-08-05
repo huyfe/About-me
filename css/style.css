@@ -308,11 +308,13 @@ body {
     text-align: center;
     margin-left: 3%;
 }
-.child-img:hover img {
-    border: 3px solid black;
+
+.child-img img {
     filter: brightness(50%);
-    box-shadow: 0 0 20px rgba(277, 277, 277, 0.1);
-    transition: 0.5s;
+    transition: all 0.3s;
+}
+.child-img:hover img {
+    filter: brightness(100%);
 }
 
 .box-work-part-bottom-child {
